@@ -89,7 +89,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="User Acceptance Testing" sap:VirtualizedContainerService.HintSize="812,2754" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="User Acceptance Testing" sap:VirtualizedContainerService.HintSize="654,1464" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="categoryID" />
       <Variable x:TypeArguments="x:String" Name="zoneID" />
@@ -101,20 +101,20 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="750,2050" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="14eb635c-e9ab-49d2-8b43-2b8614bd0d90" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="592,1212" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="14eb635c-e9ab-49d2-8b43-2b8614bd0d90" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="716,1784" sap2010:WorkflowViewState.IdRef="Sequence_41">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,986" sap2010:WorkflowViewState.IdRef="Sequence_41">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Login Activity" sap:VirtualizedContainerService.HintSize="654,90" sap2010:WorkflowViewState.IdRef="Sequence_29">
+            <Sequence DisplayName="Login Activity" sap:VirtualizedContainerService.HintSize="496,90" sap2010:WorkflowViewState.IdRef="Sequence_29">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Default="N7rkAxA!FfLrgfU" Name="loginPassword" />
                 <Variable x:TypeArguments="x:String" Default="janemphokuali@gmail.com" Name="loginEmail" />
@@ -186,13 +186,13 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
             </Sequence>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Iteration through Excel" sap:VirtualizedContainerService.HintSize="654,1920" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="C:\Users\MR S SAMBELA\Desktop\Academics\2022 Academics\CMPG 323 - IT Developments\Projects\Connected Office Test Data.xlsx">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Iteration through Excel" sap:VirtualizedContainerService.HintSize="496,732" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="C:\Users\MR S SAMBELA\Desktop\Academics\2022 Academics\CMPG 323 - IT Developments\Projects\Connected Office Test Data.xlsx">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="620,1801" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="462,613" sap2010:WorkflowViewState.IdRef="Sequence_40">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="DeviceDataTable" />
                       <Variable x:TypeArguments="sd:DataTable" Name="ZoneDataTable" />
@@ -206,7 +206,7 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap2010:Annotation.AnnotationText="Iterate through each row in Zone sheet and write each record to the web application" DisplayName="Zones Functionality" sap:VirtualizedContainerService.HintSize="558,132" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                    <Sequence sap2010:Annotation.AnnotationText="Iterate through each row in Zone sheet and write each record to the web application" DisplayName="Zones Functionality" sap:VirtualizedContainerService.HintSize="400,132" sap2010:WorkflowViewState.IdRef="Sequence_35">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -451,11 +451,11 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ForEachRow>
                     </Sequence>
-                    <Sequence sap2010:Annotation.AnnotationText="Iterate through each row in the Category sheet and write each entry in the web application&#xA;" DisplayName="Category Functionality" sap:VirtualizedContainerService.HintSize="558,1335" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                    <Sequence sap2010:Annotation.AnnotationText="Iterate through each row in the Category sheet and write each entry in the web application&#xA;" DisplayName="Category Functionality" sap:VirtualizedContainerService.HintSize="400,147" sap2010:WorkflowViewState.IdRef="Sequence_37">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -673,7 +673,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ForEachRow>
                     </Sequence>
-                    <Sequence sap2010:Annotation.AnnotationText="Iterate through each row in the device sheet and write the entries into the web application" DisplayName="Devices" sap:VirtualizedContainerService.HintSize="558,132" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                    <Sequence sap2010:Annotation.AnnotationText="Iterate through each row in the device sheet and write the entries into the web application" DisplayName="Devices" sap:VirtualizedContainerService.HintSize="400,132" sap2010:WorkflowViewState.IdRef="Sequence_33">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1146,37 +1146,6 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ExcelApplicationScope>
-    </Sequence>
-    <Sequence DisplayName="Assign Data Values" sap:VirtualizedContainerService.HintSize="496,412" sap2010:WorkflowViewState.IdRef="Sequence_62">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_42">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[categoryID]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[row("ID").ToString]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_43">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[categoryName]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[row("CategoryName").ToString]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_44">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[categoryDescript]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[row("CategoryDescription").ToString]</InArgument>
-        </Assign.Value>
-      </Assign>
     </Sequence>
   </Sequence>
 </Activity>
