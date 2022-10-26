@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Category_Functionality" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="741,3015" sap2010:WorkflowViewState.IdRef="Category_Functionality_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Category_Functionality" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="741,1351" sap2010:WorkflowViewState.IdRef="Category_Functionality_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -83,31 +83,31 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Category_Functionality" sap:VirtualizedContainerService.HintSize="750,2950" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Category_Functionality" sap:VirtualizedContainerService.HintSize="592,1286" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="688,2828" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7ad60839-a76a-4e4d-89de-536206c697ac" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="530,1164" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7ad60839-a76a-4e4d-89de-536206c697ac" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="654,2602" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,938" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="592,2478" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\MR S SAMBELA\Desktop\Academics\2022 Academics\CMPG 323 - IT Developments\Projects\Connected Office Test Data.xlsx">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,815" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\MR S SAMBELA\Desktop\Academics\2022 Academics\CMPG 323 - IT Developments\Projects\Connected Office Test Data.xlsx">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,2359" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,696" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="CategoryDataTable" />
                     </Sequence.Variables>
@@ -116,7 +116,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelReadRange AddHeaders="True" DataTable="[CategoryDataTable]" DisplayName="Read Range &quot;Category&quot;" sap:VirtualizedContainerService.HintSize="496,61" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Category">
+                    <ui:ExcelReadRange AddHeaders="True" DataTable="[CategoryDataTable]" DisplayName="Read Range &quot;Category&quot;" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Category">
                       <ui:ExcelReadRange.Range>
                         <InArgument x:TypeArguments="x:String">
                           <Literal x:TypeArguments="x:String" Value="" />
@@ -129,7 +129,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ExcelReadRange>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Categories'" sap:VirtualizedContainerService.HintSize="496,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ad60839-a76a-4e4d-89de-536206c697ac" Version="V3">
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Categories'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ad60839-a76a-4e4d-89de-536206c697ac" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/" DesignTimeRectangle="56, 364, 193, 38" DesignTimeScaleFactor="0.949999988079071" ElementType="Text" FriendlyName="'Categories'" FullSelectorArgument="&lt;webctrl aaname='Categories' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Categories' tag='A' type='' class='nav-link text-dark' check:innerText='Categories' /&gt;" Guid="dd25a1f6-22cb-48b7-af99-01f18f177a85" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAqCAYAAAADKp+nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK2SURBVHhe7Zg/btswHEZ7qE6dchkD2XKGrB58guxefABvHjJ48wEy+A7p4pGVrN/HfyJlu2AbVX0f8IBClCkb+R5J9dvlcnGHw8Gdf34C/NcoSAFgKEgBYChIAWAoSAFgKEgBYChIAWAoSAFgKEgBYChIAWAoSAFgKEgBYChIAWAoSAFgKEgBYCh/QIp39/rjyX1PeHZv59K9/xDnrVst5bdAEaWpFKfdcyaDeKBIx/Xwmc17efyrQIrFo7STQmXuedm6UzR22q3vLtJ+Y3PMTQpYPEozKXyZMyFSPtzbi93nWbt9dezJvR5rn81X7HR8tdv6Y1yYo8Ov+CKbJ94RjvbvXtDKTuF/t5E8q3CUTMdhTiiNpAh//NXuozAuSu8bHVeRpqQoj4WC1sYHfBHj3SzD3zOSpqMiRS6EGOYq/1akmC9KGymiIj30R58qWnx88mXWrhLuu0pYen4kwHAtEsfPHV3TDhdLEX+H/LsWvrt/p5rYWWC+KH95p6itrtNS1F/gO/r7CtLEhU9X7qyk+WdrZc6vT+w6g2DjnYJdYt4ojaQorLgF4nJfC1IoYEkKf60yt583GQ+lrD3rym9KEX5LLOKYfBG4tWjA16E0e9FOVvOsvPvNUCQVxBfDF3JaipFMdn2/sUJGq7YfH127cXzStTuliOePi177n7bS74J5oTSTIinYiFSK2ng/TyJXx1Do8ktrWKWnnl0WJSUS4F4pqs+0cX9/CjvFfFEaSmGUiud3jrjcXaGLBUzLFnaGcQnTgsVz9/NlxyfdN/p+2fHnbikGRqKPdpwAQswbpb0UMyGUdfrMDyCUhUhRPz6xOsO9KAuWIjv+ANxAWezxCeBRFKQAMBSkADAUpAAwFKQAMBSkADAUpAAwFKQAMBSkADAUpAAwFKQAMBSkADAUpAAwhjj3C+qtXEA82d9hAAAAAElFTkSuQmCC" InformativeScreenshot="26b239ab96aa684e2169b6c6227341b2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -140,7 +140,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CategoryDataTable]" DisplayName="For Each Row in CategoryDataTable" sap:VirtualizedContainerService.HintSize="496,1930" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CategoryDataTable]" DisplayName="For Each Row in CategoryDataTable" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
@@ -323,11 +323,16 @@
                       </ui:ForEachRow.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEachRow>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Home'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ad60839-a76a-4e4d-89de-536206c697ac" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories" DesignTimeRectangle="56, 225, 193, 38" DesignTimeScaleFactor="0.949999988079071" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' tag='A' type='' class='nav-link text-dark' check:innerText='Home' /&gt;" Guid="19afc162-c9c2-4294-b4b8-1920d102e30f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAqCAYAAAADKp+nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVHhe7dc7bgIxAIThHIoqVS6DRMcZaCk4AT0NB6CjoKDjABTcIWkoHR4ztte7rBBZyYnyj/Q1tvdRePbxdj6fw3a7DaevT+BfcygFIA6lAMShFIA4lAIQh1IA4lAKQBxKAYhDKQBxKAUgDqUAxKEUgDiUAhCHUgDiUApAHEoBiDNYKQ7rSRi9f4TRdBUOxdxmcRm/zi12jXHgN3EoBSAOpQDEqVqKOG6N+V2YaXy2P4bl1OsmYXm6zO/n6bi+a8ps35wHSs7wpegTN32+yQtxg6dSPGO8PsZ7aZVNKAb6OHVKEZ/yeuo3xrx5s1LouPwa9zVZuXzu0yqMb2vSueNxjTcR0ORU+Xzq3qRpg9+f+vnnk9bE4szDRse1Ps3yz6pSx70B5lQpRWsj3wxTivQ2SWuAZzh1frR7P5889vM3Rf6fcVjP07WADk6dUvT9aMc1L5bi4bmzAgIdnEqluGpv3vzJ/nopinEr5oGSM1gpgL/OoRSAOJQCEIdSAOJQCkAcSgGIQykAcSgFIA6lAMShFIA4lAIQh1IA4lAKQBxKAYhDKQC5J4RvAwSuhBS5TiQAAAAASUVORK5CYII=" InformativeScreenshot="4a4d576d2276878659680591fe861987.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Categories - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
                   </Sequence>
                 </ActivityAction>
               </ui:ExcelApplicationScope.Body>
