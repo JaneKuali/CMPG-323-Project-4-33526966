@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Zones_Functionality" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,1713" sap2010:WorkflowViewState.IdRef="Zones_Functionality_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Zones_Functionality" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="740,1920" sap2010:WorkflowViewState.IdRef="Zones_Functionality_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -42,7 +42,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="62">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -74,21 +74,28 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Zones_Functionality" sap:VirtualizedContainerService.HintSize="750,1648" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Zones_Functionality" sap:VirtualizedContainerService.HintSize="750,1855" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="688,1526" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0b1ee61b-cfe9-4718-9b72-c359b1adfc05" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="688,1733" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0b1ee61b-cfe9-4718-9b72-c359b1adfc05" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="654,1300" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="654,1507" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -105,13 +112,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="592,1076" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\MR S SAMBELA\Desktop\Academics\2022 Academics\CMPG 323 - IT Developments\Projects\Connected Office Test Data.xlsx">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="592,1282" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\MR S SAMBELA\Desktop\Academics\2022 Academics\CMPG 323 - IT Developments\Projects\Connected Office Test Data.xlsx">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,957" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,1163" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="ZoneDataTable" />
                     </Sequence.Variables>
@@ -295,7 +302,7 @@
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Edit/277bbf1d-6909-44c9-9fe8-198048e7f160" DesignTimeRectangle="278, 381, 341, 36" DesignTimeScaleFactor="0.949999988079071" ElementType="InputBox" FriendlyName="'Terrazzo'" FullSelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' type='text' class='form-control' aaname='Zone Name' /&gt;" Guid="74e05cdb-ce6a-4a6b-a249-0901a9293469" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVkAAAAoCAYAAABU+4kLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKiSURBVHhe7dk7TuNQFIDh2d50080+KOhYBhINq4CGblYwpAAKQKKgQGkQD9HmTo5fcRwbHJLrZr5POgI/Yqf6dbn8SABkI7IAGa1F9vX9I90+PKbL67v09+rWGGPMiIlmRjujoV1NZOPi7OY+Pb+8pcViUZ0F4CvRzGhnNLQb2iayUeG4CYDviYZGS9uayMZy1woW4PuiodHStiaysa8AwG66LRVZgD0SWYCMRBYgI5EFyEhkATISWYCMRBYgI5EFyGhvkZ2d/E4/f/XPwfm8ugvg/5JlJRvBFVYAkQXIarrIzi/SwdAWwux0ee40zYqfy+snV8uTV+l4+fvxrPxZXI97O88p7y09nR+tzjdzlM7m83R22D2/nMOL9FR9tn7f6nr1PoAdTBPZIowRu+q4CWh1uBbXWieulafz0+HnrCnD2rui7n6fKtzt55TBFlpgN5NEtm9lW0SsjmoR2XaEQxnQ3ki2DG1NFM9fW6nWNuMbz1gPfCjv6w84wDgTRHbgT/WYOoL1dkFxf214lVpEsfWcjchurJxXNuM7vOIdCjjAWJNF9tNYjY5stYXQWnVuhvCT9/XGd3jFKrLAriaIbHm8+ed4y9jIxn2dLYDuu7bZJqj1f7/h+AKMNUlk+/6xFMFsjsdGtrsSLT7XetdW2wQtPd/v0/sBRpomsqEKYjPtgI2N7FIRv/oZy9Xn6l3lynPtHdUc/ykjunmt9c4qtM01gQX2IEtkASiJLEBGIguQkcgCZCSyABmJLEBGIguQkcgCZDQY2cvru7RYLKojALYVDY2WtjWRvX14TM8vb9URANuKhkZL25rIvr5/pNnNfXGTFS3AeNHMaGc0NFra1kQ2xMWocCx3Y1/BGGPM1xPNjHZ2AxvWIgvAfoksQDYp/QMlpC5JU8LP4wAAAABJRU5ErkJggg==" InformativeScreenshot="5d3ee07e80291d8a04d12568f0903564.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target DesignTimeRectangle="278, 351, 78, 23" ElementType="Text" FriendlyName="'Zone Name'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' aaname='Zone Name' check:innerText='Zone Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAbCAYAAADve9g/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIASURBVGhD7ZVBjsIwDAD3K3vYwz4LceAlPcBPkPoUEM9AgkdkHTtNnNhJEVgLB49UiSatY4+T8hUcE1ykES7SCBdphIs0wkUa4SKNcJFGJJH3cNz+hu+fzrW/0GNvYcntEM5phHObd2/OjxjuSEyyU8D/wZqsCPt8kdc5bCD56ZTu3waJnGY9n48Xed53jnQSnI/9dg63NBXBwuLY6dB9RnxKxDwniQSB2gmRIpvY1fM0t5kv7JldOF5haphv8qHGJHSRGFQ50jieFk7gAmxhKhbGcnGXMMH9Zr6n+6WY5X7QNKSI1N4VIqHRUzf2IrnUkAXlGtp8ZX55s6T7iCJSBiJkEUR8viS2umtiM9qO4y5XGodwkQA+26zXbQJQrafU0MSLVDHV3OqaI0Jku8MKJFh+M+tCtW7xMfwdd4C46sQKjUiA56iK5Mc0XqsiVxrPY7GL51SLVLpTkF0gnhDZzI+RInlTW5F0VJmYh3bkmsjeaSkwkcoiFb155WgPRD6aWEETCaQ4x0qk0uxXRQ43VyGL1AQIMPk66CMf4nqMiuHvoIDqntMRucSJxyy/24qinfuSSEB+7iDOvq6RRGKwlJR28SJRZmcOWBcZSQXma9TxnkhgyZvnUNUCgl7dkQi9V/KV+Yg/G+c5XKQRLtIIF2mEizTCRRrhIo1wkSaE8AfpB3fB1rUb3AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -354,6 +361,11 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEachRow>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Home'" sap:VirtualizedContainerService.HintSize="496,166" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0b1ee61b-cfe9-4718-9b72-c359b1adfc05" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="56, 225, 193, 38" DesignTimeScaleFactor="0.949999988079071" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' tag='A' type='' class='nav-link text-dark' check:innerText='Home' /&gt;" Guid="5fc20df4-da63-46a8-af49-394f4113f47a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAqCAYAAAADKp+nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVHhe7dc7bgIxAIThHIoqVS6DRMcZaCk4AT0NB6CjoKDjABTcIWkoHR4ztte7rBBZyYnyj/Q1tvdRePbxdj6fw3a7DaevT+BfcygFIA6lAMShFIA4lAIQh1IA4lAKQBxKAYhDKQBxKAUgDqUAxKEUgDiUAhCHUgDiUApAHEoBiDNYKQ7rSRi9f4TRdBUOxdxmcRm/zi12jXHgN3EoBSAOpQDEqVqKOG6N+V2YaXy2P4bl1OsmYXm6zO/n6bi+a8ps35wHSs7wpegTN32+yQtxg6dSPGO8PsZ7aZVNKAb6OHVKEZ/yeuo3xrx5s1LouPwa9zVZuXzu0yqMb2vSueNxjTcR0ORU+Xzq3qRpg9+f+vnnk9bE4szDRse1Ps3yz6pSx70B5lQpRWsj3wxTivQ2SWuAZzh1frR7P5889vM3Rf6fcVjP07WADk6dUvT9aMc1L5bi4bmzAgIdnEqluGpv3vzJ/nopinEr5oGSM1gpgL/OoRSAOJQCEIdSAOJQCkAcSgGIQykAcSgFIA6lAMShFIA4lAIQh1IA4lAKQBxKAYhDKQC5J4RvAwSuhBS5TiQAAAAASUVORK5CYII=" InformativeScreenshot="21846b54a073742e6bf23216d43f62fa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
                   </Sequence>
                 </ActivityAction>
               </ui:ExcelApplicationScope.Body>

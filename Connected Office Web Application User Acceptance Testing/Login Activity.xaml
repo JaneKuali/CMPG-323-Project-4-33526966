@@ -91,7 +91,11 @@
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1027" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="loginEmail" />
+              <Variable x:TypeArguments="x:String" Name="loginEmail">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">janemphokuali@gmail.com</Literal>
+                </Variable.Default>
+              </Variable>
               <Variable x:TypeArguments="x:String" Name="loginPassword" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
