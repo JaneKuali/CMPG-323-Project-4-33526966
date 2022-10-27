@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Login_Activity" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="741,1440" sap2010:WorkflowViewState.IdRef="Login_Activity_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_Activity" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="741,1441" sap2010:WorkflowViewState.IdRef="Login_Activity_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
       <x:String>System.Activities</x:String>
@@ -73,30 +73,30 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.Python</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login_Activity" sap:VirtualizedContainerService.HintSize="532,1375" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Login_Activity" sap:VirtualizedContainerService.HintSize="496,1376" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="470,1253" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="14eb635c-e9ab-49d2-8b43-2b8614bd0d90" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="434,1254" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="14eb635c-e9ab-49d2-8b43-2b8614bd0d90" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1027" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1028" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="loginEmail">
+              <Variable x:TypeArguments="x:String" Default="janemphokuali@gmail.com" Name="loginEmail" />
+              <Variable x:TypeArguments="x:String" Name="loginPassword">
                 <Variable.Default>
-                  <Literal x:TypeArguments="x:String">janemphokuali@gmail.com</Literal>
+                  <Literal x:TypeArguments="x:String">N7rkAxA!FfLrgfU</Literal>
                 </Variable.Default>
               </Variable>
-              <Variable x:TypeArguments="x:String" Name="loginPassword" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
